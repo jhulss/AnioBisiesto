@@ -5,4 +5,9 @@ describe("Bisiesto", () => {
       const bi = new bisiesto();
         expect(bi.verificarBisiesto(1996)).toEqual("El anio es bisiesto");
     });
+
+    it("deberia considerar 2055 como anio NO bisiesto", () => {
+        const bi = new bisiesto();
+          expect(bi.verificarBisiesto(2005)).toEqual("El anio no es bisiesto");
+      });
   });
